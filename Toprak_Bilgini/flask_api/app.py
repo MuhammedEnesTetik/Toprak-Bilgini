@@ -8,8 +8,8 @@ app = Flask(__name__)
 CORS(app)  # CORS'u aktifleştirin
 
 # Modeli yükle
-model = joblib.load(r'C:\Users\Vedat\Desktop\Toprak_Bilgini\flask_api\model.pkl')
-label_encoder = joblib.load(r'C:\Users\Vedat\Desktop\Toprak_Bilgini\flask_api\label_encoder.pkl')
+model = joblib.load('')
+label_encoder = joblib.load('')
 
 @app.route('/predict', methods=['POST'])
 def predict():
